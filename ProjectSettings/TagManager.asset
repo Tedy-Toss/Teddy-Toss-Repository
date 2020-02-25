@@ -7,6 +7,9 @@ TagManager:
   - spikes
   - Spikes
   - Lava
+  - Laser
+  - LaserTop
+  - LaserBottom
   layers:
   - Default
   - TransparentFX
