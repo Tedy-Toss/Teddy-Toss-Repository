@@ -10,6 +10,8 @@ public class TeddyToss : MonoBehaviour
 
     private CharacterController2D airMove;
 
+    public Rigidbody2D rb;
+
     private bool isAir = false;
 
     // Start is called before the first frame update
@@ -18,15 +20,15 @@ public class TeddyToss : MonoBehaviour
         airMove = this.GetComponent<CharacterController2D>();
     }
 
-    private void Update()
+    void Update()
     {
         startPos = transform.position;
     }
 
 
-    void OnMouseUp()
+    private void OnMouseUp()
     {
-        if (isAir == false)
+        if (isAir == false && rb.velocity.y == 0)
         {
             // Disable isKinematic
             GetComponent<Rigidbody2D>().isKinematic = false;
@@ -35,12 +37,14 @@ public class TeddyToss : MonoBehaviour
             Vector2 dir = startPos - launchVector;
             GetComponent<Rigidbody2D>().AddForce(dir * force);
             isAir = true;
+
+            Invoke("launchCheck", 0.1f);
         }
     }
 
-    void OnMouseDrag()
+    private void OnMouseDrag()
     {
-        if (isAir == false)
+        if (isAir == false && rb.velocity.y == 0)
         {
             // Convert mouse position to world position
             Vector2 p = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -58,9 +62,18 @@ public class TeddyToss : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "ground")
+        {
+            airMove.m_AirControl = true;
+            isAir = false;
+        }
+    }
+
+    private void launchCheck()
+    {
+        if (rb.velocity.y == 0)
         {
             airMove.m_AirControl = true;
             isAir = false;
