@@ -10,6 +10,7 @@ TagManager:
   - Laser
   - LaserTop
   - LaserBottom
+  - ground
   layers:
   - Default
   - TransparentFX
