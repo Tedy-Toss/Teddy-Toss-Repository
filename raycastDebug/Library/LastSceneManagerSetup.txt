@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/2D Free Platformer Char/Scenes/DebugScene.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
