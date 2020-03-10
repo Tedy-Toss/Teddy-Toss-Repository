@@ -4,23 +4,74 @@ using UnityEngine;
 
 public class MovingTerrain : MonoBehaviour
 {
-   public int seconds = 3;
+    public int seconds = 3;
        
-    // Update is called once per frame
+    
+    bool isStarted = true;
+    
+    Vector3 destination;
+    Vector3 origin;
+    public Vector3 desiredLocation = new Vector3 (-4.5f, 3.5f, 0f);
     void Update()
     {
-        StartCoroutine(movingBlock());
+        if(isStarted == true)
+        {
+            StartCoroutine(RisingBlock());
+            isStarted = false;
+        }
+        else
+        {
+
+        }
+
         
+       
     }
 
-    private IEnumerator movingBlock()
+    public IEnumerator RisingBlock()
     {
-        transform.Translate(Vector3.up * Time.deltaTime, Space.Self);
+       
+            float totalMovementTime = 5f;
+            float currentMovementTime = 0f;
+        origin = transform.position;
+        destination = desiredLocation;
 
-        yield return new WaitForSeconds(seconds);
+        while (Vector3.Distance(transform.localPosition, destination) > 0)
+        {
+            currentMovementTime += Time.deltaTime;
+            transform.localPosition = Vector3.Lerp(origin, destination, currentMovementTime / totalMovementTime);
 
-        
+        }
 
-        transform.Translate(Vector3.down * Time.deltaTime, Space.Self);
+
+
+
+
+
+
+
+
+
+        /* 
+      destination = Vector3.up;
+      //oldDestination = destination;
+
+      Debug.Log(destination);
+      Debug.Log(this.transform.position + "current pos");
+
+      transform.Translate(Vector3.up * Speed, Space.Self);
+
+
+
+
+
+      //transform.Translate(Vector3.down * Time.deltaTime, Space.Self);
+
+      yield return new WaitForSeconds(seconds);       
+          */
+
+
+
+
     }
 }
