@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class MovingTerrain : MonoBehaviour
 {
-    public float blockSpeed = 1f;
-    
-    public float Track = 0f;
+   public int seconds = 3;
        
     // Update is called once per frame
     void Update()
-    {  
-       
-            
-            transform.Translate(Vector3.up * Time.deltaTime, Space.Self);
-            
-            Debug.Log("hi");
-
-        if (Track == 10)
-        {
-            // transform.Translate(-Vector3.up * Time.deltaTime, Space.Self);
-        }
+    {
+        StartCoroutine(movingBlock());
         
+    }
+
+    private IEnumerator movingBlock()
+    {
+        transform.Translate(Vector3.up * Time.deltaTime, Space.Self);
+
+        yield return new WaitForSeconds(seconds);
+
+        
+
+        transform.Translate(Vector3.down * Time.deltaTime, Space.Self);
     }
 }
