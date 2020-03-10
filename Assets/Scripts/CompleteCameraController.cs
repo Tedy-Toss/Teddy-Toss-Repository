@@ -5,7 +5,7 @@ public class CompleteCameraController : MonoBehaviour {
 
     public Transform Follow; //Public variable to store a reference to the player game object
 
-    public float smoothSpeed = 10f;
+    public float smoothSpeed = 2f;
 
 	public Vector3 offset;			//Private variable to store the offset distance between the player and camera
 	
@@ -18,6 +18,8 @@ public class CompleteCameraController : MonoBehaviour {
 
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
         transform.position = smoothedLocation;
+
+        
       
     }
 }
