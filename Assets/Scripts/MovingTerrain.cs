@@ -4,74 +4,37 @@ using UnityEngine;
 
 public class MovingTerrain : MonoBehaviour
 {
-    public int seconds = 3;
-       
-    
-    bool isStarted = true;
-    
-    Vector3 destination;
-    Vector3 origin;
-    public Vector3 desiredLocation = new Vector3 (-4.5f, 3.5f, 0f);
+    public float Speed;
+
+    public Transform startPos;
+    public Transform StartPosition, EndPosition;
+
+    Vector3 nextPos;
+
+    void Start()
+    {
+        nextPos = startPos.position;
+    }
+
     void Update()
     {
-        if(isStarted == true)
+        if (transform.position == StartPosition.position)
         {
-            StartCoroutine(RisingBlock());
-            isStarted = false;
-        }
-        else
-        {
-
+            nextPos = EndPosition.position;
+            Debug.Log("hey");
         }
 
-        
-       
+        if (transform.position == EndPosition.position)
+        {
+            nextPos = StartPosition.position;
+            Debug.Log("hi");
+        }
+
+        transform.position = Vector3.MoveTowards(transform.position, nextPos, Speed * Time.deltaTime);
     }
-
-    public IEnumerator RisingBlock()
+    private void OnDrawGizmos()
     {
-       
-            float totalMovementTime = 5f;
-            float currentMovementTime = 0f;
-        origin = transform.position;
-        destination = desiredLocation;
-
-        while (Vector3.Distance(transform.localPosition, destination) > 0)
-        {
-            currentMovementTime += Time.deltaTime;
-            transform.localPosition = Vector3.Lerp(origin, destination, currentMovementTime / totalMovementTime);
-
-        }
-
-
-
-
-
-
-
-
-
-
-        /* 
-      destination = Vector3.up;
-      //oldDestination = destination;
-
-      Debug.Log(destination);
-      Debug.Log(this.transform.position + "current pos");
-
-      transform.Translate(Vector3.up * Speed, Space.Self);
-
-
-
-
-
-      //transform.Translate(Vector3.down * Time.deltaTime, Space.Self);
-
-      yield return new WaitForSeconds(seconds);       
-          */
-
-
-
-
+        Gizmos.DrawLine(StartPosition.position, EndPosition.position);
     }
 }
+  
