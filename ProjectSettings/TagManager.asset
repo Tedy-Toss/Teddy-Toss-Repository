@@ -11,6 +11,7 @@ TagManager:
   - LaserTop
   - LaserBottom
   - ground
+  - wall
   layers:
   - Default
   - TransparentFX
