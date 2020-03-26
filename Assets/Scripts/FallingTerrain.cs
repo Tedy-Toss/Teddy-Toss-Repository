@@ -4,24 +4,31 @@ using UnityEngine;
 
 public class FallingTerrain : MonoBehaviour
 {
-    public float blockSpeed = -10f;
-    private Rigidbody2D FallingBlock;
-    
+    public float Speed;
 
-    private void Awake()
+    public Transform startPos;
+    public Transform StartPosition, EndPosition;
+    public Transform player;
+
+    Vector3 nextPos;
+
+    void Start()
     {
-        FallingBlock = GetComponent<Rigidbody2D>();
+        nextPos = StartPosition.position;
     }
-   
 
-    void OnCollisionEnter(Collision collision)
+    void Update()
     {
-        //MovingBlock.AddForce(transform.up * blockSpeed * Time.fixedDeltaTime);
-
-        if (collision.gameObject.tag == "player")
+        if (startPos.position == player.position)
         {
-
-            FallingBlock.AddForce(transform.up * blockSpeed);
+            nextPos = EndPosition.position;
+           Debug.Log("hey");
         }
+              
+        transform.position = Vector3.MoveTowards(transform.position, nextPos, Speed * Time.deltaTime);
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawLine(StartPosition.position, EndPosition.position);
     }
 }

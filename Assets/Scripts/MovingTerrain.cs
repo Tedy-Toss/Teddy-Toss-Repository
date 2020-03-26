@@ -8,6 +8,7 @@ public class MovingTerrain : MonoBehaviour
 
     public Transform startPos;
     public Transform StartPosition, EndPosition;
+    
 
     Vector3 nextPos;
 
@@ -21,13 +22,13 @@ public class MovingTerrain : MonoBehaviour
         if (transform.position == StartPosition.position)
         {
             nextPos = EndPosition.position;
-            Debug.Log("hey");
+           // Debug.Log("hey");
         }
 
         if (transform.position == EndPosition.position)
         {
             nextPos = StartPosition.position;
-            Debug.Log("hi");
+            //Debug.Log("hi");
         }
 
         transform.position = Vector3.MoveTowards(transform.position, nextPos, Speed * Time.deltaTime);
