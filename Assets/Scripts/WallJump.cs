@@ -6,6 +6,7 @@ public class WallJump : MonoBehaviour
 {
     public bool allowedToJump;
     public bool jump;
+    public bool onGround;
 
     public float jumpForce = 10f;
 
@@ -16,13 +17,15 @@ public class WallJump : MonoBehaviour
     {
         allowedToJump = false;
         jump = true;
+        onGround = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && allowedToJump && jump == true)
+        if (Input.GetKeyDown(KeyCode.Space) && allowedToJump && jump == true && onGround == false)
         {
+            Debug.Log("jump");
             playerBody.velocity = new Vector2(playerBody.velocity.x, jumpForce);
             allowedToJump = false;
             jump = false;
@@ -35,6 +38,11 @@ public class WallJump : MonoBehaviour
         {
             allowedToJump = true;
         }
+
+        if (collision.gameObject.tag == "ground")
+        {
+            onGround = true;
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -44,7 +52,11 @@ public class WallJump : MonoBehaviour
             allowedToJump = false;
             jump = true;
         }
-    }
-}
 
-//test
+        if (collision.gameObject.tag == "ground")
+        {
+            onGround = false;
+        }
+    }
+
+}
