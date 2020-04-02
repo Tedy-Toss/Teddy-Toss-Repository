@@ -12,6 +12,7 @@ TagManager:
   - LaserBottom
   - ground
   - wall
+  - ice
   layers:
   - Default
   - TransparentFX
