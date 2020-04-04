@@ -6,7 +6,7 @@ public class FallingTerrain : MonoBehaviour
 {
     public float Speed;
 
-    public Transform startPos;
+    public Transform sensorPosition;
     public Transform StartPosition, EndPosition;
     public Transform player;
 
@@ -14,17 +14,20 @@ public class FallingTerrain : MonoBehaviour
 
     void Start()
     {
-        nextPos = StartPosition.position;
+        nextPos = this.transform.position;
     }
 
-    void Update()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (startPos.position == player.position)
+        if (collision.tag == "Player")
         {
             nextPos = EndPosition.position;
            Debug.Log("hey");
         }
-              
+    }
+
+    private void Update()
+    {
         transform.position = Vector3.MoveTowards(transform.position, nextPos, Speed * Time.deltaTime);
     }
     private void OnDrawGizmos()
