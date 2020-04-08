@@ -2621,7 +2621,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453124674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 48.9, y: -7.82, z: 1}
+  m_LocalPosition: {x: -8.02, y: -4.35, z: 1}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 504048570}
@@ -2665,6 +2665,7 @@ MonoBehaviour:
   Laser: {fileID: 1202899924}
   LaserBottom: {fileID: 443531483}
   LaserTop: {fileID: 579126604}
+  isdead: 0
   rb: {fileID: 1453124679}
 --- !u!1 &1481159931
 GameObject:
@@ -3757,8 +3758,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d3eb1decbf3f514fb3a2455922e3989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 0
-  levelName: Level 2
+  index: 2
+  levelName: 
 --- !u!212 &1838584540
 SpriteRenderer:
   m_ObjectHideFlags: 0

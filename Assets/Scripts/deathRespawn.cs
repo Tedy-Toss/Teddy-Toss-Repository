@@ -9,7 +9,7 @@ public class deathRespawn : MonoBehaviour
     public GameObject Laser;
     public GameObject LaserBottom;
     public GameObject LaserTop;
-
+    public bool isdead = false;
     public Rigidbody2D rb;
 
     private PlayerMovement movementScript;
@@ -87,6 +87,7 @@ public class deathRespawn : MonoBehaviour
     //Death on spikes
     private IEnumerator deadSpikes()
     {
+        isdead = true;
         rb.velocity = new Vector2(0f, 0f);
         rb.gravityScale = 0;
         movementScript.enabled = false;
@@ -98,12 +99,14 @@ public class deathRespawn : MonoBehaviour
         transform.position = new Vector3(-6, -3, 0);
         gameObject.GetComponent<Renderer>().enabled = true;
         movementScript.enabled = true;
-        rb.gravityScale = 3;
+        rb.gravityScale = 4;
+        isdead = false;
     }
 
     //Death on lava
     private IEnumerator deadLava()
     {
+        isdead = true;
         rb.velocity = new Vector2(0f, 0f);
         rb.gravityScale = 0;
         movementScript.enabled = false;
@@ -116,10 +119,12 @@ public class deathRespawn : MonoBehaviour
         gameObject.GetComponent<Renderer>().enabled = true;
         movementScript.enabled = true;
         rb.gravityScale = 3;
+        isdead = false;
     }
 
     private IEnumerator deadLaser()
     {
+        isdead = true;
         rb.velocity = new Vector2(0f, 0f);
         rb.gravityScale = 0;
         movementScript.enabled = false;
@@ -132,5 +137,6 @@ public class deathRespawn : MonoBehaviour
         gameObject.GetComponent<Renderer>().enabled = true;
         movementScript.enabled = true;
         rb.gravityScale = 3;
+        isdead = false;
     }
 }
