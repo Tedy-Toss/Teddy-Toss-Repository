@@ -10,7 +10,11 @@ TagManager:
   - Laser
   - LaserTop
   - LaserBottom
+  - ground
+  - wall
+  - ice
   - Platform
+
 
   layers:
   - Default
