@@ -13,6 +13,9 @@ TagManager:
   - ground
   - wall
   - ice
+  - Platform
+
+
   layers:
   - Default
   - TransparentFX
