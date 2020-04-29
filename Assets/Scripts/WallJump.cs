@@ -36,7 +36,9 @@ public class WallJump : MonoBehaviour
     {
         if (collision.gameObject.tag == "wall" && jump == true)
         {
+            jump = true;
             allowedToJump = true;
+            Debug.Log("im on wall");
         }
 
         if (collision.gameObject.tag == "ground")
@@ -45,12 +47,13 @@ public class WallJump : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    /*private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "wall")
         {
             allowedToJump = false;
             jump = true;
+            Debug.Log("why am i here");
         }
 
         if (collision.gameObject.tag == "ground")
@@ -58,5 +61,5 @@ public class WallJump : MonoBehaviour
             onGround = false;
         }
     }
-
+    */
 }

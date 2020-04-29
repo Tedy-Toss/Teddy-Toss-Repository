@@ -111,36 +111,40 @@ public class deathRespawn : MonoBehaviour
     private IEnumerator deadLava()
     {
         isdead = true;
+        animator.SetBool("IsDead", true);
         rb.velocity = new Vector2(0f, 0f);
         rb.gravityScale = 0;
         movementScript.enabled = false;
-        gameObject.GetComponent<Renderer>().enabled = false;
+        //gameObject.GetComponent<Renderer>().enabled = false;
         //test_dead.transform.position = new Vector3(playerPosX, playerPosY - 0.5f, playerPosZ);
        // test_dead.SetActive(true);
         yield return new WaitForSeconds(3);
         //test_dead.SetActive(false);
         transform.position = new Vector3(-6, -3, 0);
-        gameObject.GetComponent<Renderer>().enabled = true;
+        //gameObject.GetComponent<Renderer>().enabled = true;
         movementScript.enabled = true;
         rb.gravityScale = 4;
+        animator.SetBool("IsDead", false);
         isdead = false;
     }
 
     private IEnumerator deadLaser()
     {
         isdead = true;
+        animator.SetBool("IsDead", true);
         rb.velocity = new Vector2(0f, 0f);
         rb.gravityScale = 0;
         movementScript.enabled = false;
-        gameObject.GetComponent<Renderer>().enabled = false;
+        //gameObject.GetComponent<Renderer>().enabled = false;
         //test_dead.transform.position = new Vector3(playerPosX, playerPosY, playerPosZ);
         //test_dead.SetActive(true);
         yield return new WaitForSeconds(3);
         //test_dead.SetActive(false);
         transform.position = new Vector3(-6, -3, 0);
-        gameObject.GetComponent<Renderer>().enabled = true;
+        //gameObject.GetComponent<Renderer>().enabled = true;
         movementScript.enabled = true;
         rb.gravityScale = 4;
+        animator.SetBool("IsDead", false);
         isdead = false;
     }
 }
