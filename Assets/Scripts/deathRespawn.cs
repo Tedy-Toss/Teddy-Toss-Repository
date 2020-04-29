@@ -5,12 +5,13 @@ using UnityEngine;
 public class deathRespawn : MonoBehaviour
 {
     public GameObject player;
-    public GameObject test_dead;
+    //public GameObject test_dead;
     public GameObject Laser;
     public GameObject LaserBottom;
     public GameObject LaserTop;
     public bool isdead = false;
     public Rigidbody2D rb;
+    public Animator animator;
 
     private PlayerMovement movementScript;
 
@@ -21,7 +22,7 @@ public class deathRespawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        test_dead.SetActive(false);
+        //test_dead.SetActive(false);
         Laser.SetActive(false);
         LaserBottom.SetActive(false);
         LaserTop.SetActive(false);
@@ -49,6 +50,7 @@ public class deathRespawn : MonoBehaviour
         if (collision.tag == "Spikes")
         {
             StartCoroutine("deadSpikes");
+            Debug.Log("hi");
         }
 
         if (collision.tag == "Lava")
@@ -88,18 +90,20 @@ public class deathRespawn : MonoBehaviour
     private IEnumerator deadSpikes()
     {
         isdead = true;
+        animator.SetBool("IsDead", true);
         rb.velocity = new Vector2(0f, 0f);
         rb.gravityScale = 0;
         movementScript.enabled = false;
-        gameObject.GetComponent<Renderer>().enabled = false;
-        test_dead.transform.position = new Vector3(playerPosX, playerPosY - 0.8f, playerPosZ);
-        test_dead.SetActive(true);
+        //gameObject.GetComponent<Renderer>().enabled = false;
+        //test_dead.transform.position = new Vector3(playerPosX, playerPosY - 0.8f, playerPosZ);
+        //test_dead.SetActive(true);
         yield return new WaitForSeconds(3);
-        test_dead.SetActive(false);
+        //test_dead.SetActive(false);
         transform.position = new Vector3(-6, -3, 0);
-        gameObject.GetComponent<Renderer>().enabled = true;
+        //gameObject.GetComponent<Renderer>().enabled = true;
         movementScript.enabled = true;
         rb.gravityScale = 4;
+        animator.SetBool("IsDead", false);
         isdead = false;
     }
 
@@ -111,14 +115,14 @@ public class deathRespawn : MonoBehaviour
         rb.gravityScale = 0;
         movementScript.enabled = false;
         gameObject.GetComponent<Renderer>().enabled = false;
-        test_dead.transform.position = new Vector3(playerPosX, playerPosY - 0.5f, playerPosZ);
-        test_dead.SetActive(true);
+        //test_dead.transform.position = new Vector3(playerPosX, playerPosY - 0.5f, playerPosZ);
+       // test_dead.SetActive(true);
         yield return new WaitForSeconds(3);
-        test_dead.SetActive(false);
+        //test_dead.SetActive(false);
         transform.position = new Vector3(-6, -3, 0);
         gameObject.GetComponent<Renderer>().enabled = true;
         movementScript.enabled = true;
-        rb.gravityScale = 3;
+        rb.gravityScale = 4;
         isdead = false;
     }
 
@@ -129,14 +133,14 @@ public class deathRespawn : MonoBehaviour
         rb.gravityScale = 0;
         movementScript.enabled = false;
         gameObject.GetComponent<Renderer>().enabled = false;
-        test_dead.transform.position = new Vector3(playerPosX, playerPosY, playerPosZ);
-        test_dead.SetActive(true);
+        //test_dead.transform.position = new Vector3(playerPosX, playerPosY, playerPosZ);
+        //test_dead.SetActive(true);
         yield return new WaitForSeconds(3);
-        test_dead.SetActive(false);
+        //test_dead.SetActive(false);
         transform.position = new Vector3(-6, -3, 0);
         gameObject.GetComponent<Renderer>().enabled = true;
         movementScript.enabled = true;
-        rb.gravityScale = 3;
+        rb.gravityScale = 4;
         isdead = false;
     }
 }
