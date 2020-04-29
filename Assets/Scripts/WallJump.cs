@@ -17,13 +17,13 @@ public class WallJump : MonoBehaviour
     {
         allowedToJump = false;
         jump = true;
-        onGround = true;
+        //onGround = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && allowedToJump && jump == true && onGround == false)
+        if (Input.GetKeyDown(KeyCode.Space) && allowedToJump && jump == true)
         {
             Debug.Log("jump");
             playerBody.velocity = new Vector2(playerBody.velocity.x, jumpForce);
@@ -41,13 +41,13 @@ public class WallJump : MonoBehaviour
             Debug.Log("im on wall");
         }
 
-        if (collision.gameObject.tag == "ground")
+        /*if (collision.gameObject.tag == "ground")
         {
             onGround = true;
-        }
+        }*/
     }
 
-    /*private void OnCollisionExit2D(Collision2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "wall")
         {
@@ -56,10 +56,10 @@ public class WallJump : MonoBehaviour
             Debug.Log("why am i here");
         }
 
-        if (collision.gameObject.tag == "ground")
+        /*if (collision.gameObject.tag == "ground")
         {
             onGround = false;
-        }
+        }*/
     }
-    */
+    
 }
