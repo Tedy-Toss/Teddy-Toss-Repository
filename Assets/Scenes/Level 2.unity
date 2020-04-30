@@ -8009,7 +8009,7 @@ GameObject:
   - component: {fileID: 895880999}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36371,6 +36371,8 @@ GameObject:
   - component: {fileID: 1592312075}
   - component: {fileID: 1592312074}
   - component: {fileID: 1592312073}
+  - component: {fileID: 1592312083}
+  - component: {fileID: 1592312082}
   m_Layer: 8
   m_Name: Character
   m_TagString: Player
@@ -36391,12 +36393,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1592312072}
-  test_dead: {fileID: 428018580}
   Laser: {fileID: 1360495464}
   LaserBottom: {fileID: 1921937960}
   LaserTop: {fileID: 351263088}
   isdead: 0
   rb: {fileID: 1592312079}
+  animator: {fileID: 1592312074}
 --- !u!95 &1592312074
 Animator:
   serializedVersion: 3
@@ -36613,6 +36615,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1592312082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592312072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb569053c4c60684499e765e8695982a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 100
+  rb: {fileID: 1592312079}
+--- !u!114 &1592312083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592312072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fef40d653ade204cb4036539c137313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowedToJump: 0
+  jump: 0
+  onGround: 0
+  jumpForce: 20
+  playerBody: {fileID: 1592312079}
 --- !u!1 &1609980757
 GameObject:
   m_ObjectHideFlags: 0

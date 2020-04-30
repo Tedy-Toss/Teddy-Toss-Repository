@@ -2108,7 +2108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286928383}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.268549, y: -19.242538, z: 0}
+  m_LocalPosition: {x: -5.18, y: -22.95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2189,7 +2189,7 @@ Transform:
   m_GameObject: {fileID: 1334103151}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.32, y: -0.919, z: 0}
-  m_LocalScale: {x: 3.333, y: 5.953058, z: 1}
+  m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -2425,6 +2425,8 @@ GameObject:
   - component: {fileID: 1453124675}
   - component: {fileID: 1453124682}
   - component: {fileID: 1453124683}
+  - component: {fileID: 1453124685}
+  - component: {fileID: 1453124684}
   m_Layer: 8
   m_Name: Character
   m_TagString: Player
@@ -2621,7 +2623,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453124674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.02, y: -4.35, z: 1}
+  m_LocalPosition: {x: -7.71, y: -4.96, z: 1}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 504048570}
@@ -2661,11 +2663,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1453124674}
-  test_dead: {fileID: 1286928383}
   Laser: {fileID: 1202899924}
   LaserBottom: {fileID: 443531483}
   LaserTop: {fileID: 579126604}
   isdead: 0
+  rb: {fileID: 1453124679}
+  animator: {fileID: 1453124682}
+--- !u!114 &1453124684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453124674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fef40d653ade204cb4036539c137313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowedToJump: 0
+  jump: 0
+  onGround: 0
+  jumpForce: 20
+  playerBody: {fileID: 1453124679}
+--- !u!114 &1453124685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453124674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb569053c4c60684499e765e8695982a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 100
   rb: {fileID: 1453124679}
 --- !u!1 &1481159931
 GameObject:
@@ -3000,7 +3033,7 @@ Transform:
   m_GameObject: {fileID: 1526490749}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 57.995, y: -0.998, z: 0}
-  m_LocalScale: {x: 3.336333, y: 5.953058, z: 1}
+  m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -3508,7 +3541,7 @@ Transform:
   m_GameObject: {fileID: 1739177316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 109.077995, y: -1.021, z: 0}
-  m_LocalScale: {x: 3.333, y: 5.953058, z: 1}
+  m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -4162,7 +4195,7 @@ GameObject:
   - component: {fileID: 2135700240}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
