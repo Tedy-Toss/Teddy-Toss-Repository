@@ -12,6 +12,9 @@ public class deathRespawn : MonoBehaviour
     public bool isdead = false;
     public Rigidbody2D rb;
     public Animator animator;
+    public GameObject Laser2;
+    public GameObject LaserBottom2;
+    public GameObject LaserTop2;
 
     private PlayerMovement movementScript;
 
@@ -26,6 +29,9 @@ public class deathRespawn : MonoBehaviour
         Laser.SetActive(false);
         LaserBottom.SetActive(false);
         LaserTop.SetActive(false);
+        Laser2.SetActive(false);
+        LaserBottom2.SetActive(false);
+        LaserTop2.SetActive(false);
         movementScript = player.GetComponent<PlayerMovement>();
         rb = GetComponent<Rigidbody2D>();
     }
@@ -79,11 +85,17 @@ public class deathRespawn : MonoBehaviour
         Laser.SetActive(true);
         LaserBottom.SetActive(true);
         LaserTop.SetActive(true);
+        Laser2.SetActive(true);
+        LaserBottom2.SetActive(true);
+        LaserTop2.SetActive(true);
         yield return new WaitForSeconds(3);
         timer = 0;
         Laser.SetActive(false);
         LaserBottom.SetActive(false);
         LaserTop.SetActive(false);
+        Laser2.SetActive(false);
+        LaserBottom2.SetActive(false);
+        LaserTop2.SetActive(false);
     }
 
     //Death on spikes

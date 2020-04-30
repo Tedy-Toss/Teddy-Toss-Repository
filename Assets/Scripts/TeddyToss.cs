@@ -23,6 +23,7 @@ public class TeddyToss : MonoBehaviour
     void Update()
     {
         startPos = transform.position;
+        //if()
     }
 
 
@@ -68,6 +69,14 @@ public class TeddyToss : MonoBehaviour
         {
             airMove.m_AirControl = true;
             isAir = false;
+        }
+    }
+    private IEnumerator workAround()
+    {
+        if (airMove.m_AirControl == false)
+        {
+            yield return new WaitForSeconds(3);
+            airMove.m_AirControl = true;
         }
     }
 

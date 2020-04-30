@@ -430,6 +430,9 @@ MonoBehaviour:
   isdead: 0
   rb: {fileID: 874696606}
   animator: {fileID: 0}
+  Laser2: {fileID: 0}
+  LaserBottom2: {fileID: 0}
+  LaserTop2: {fileID: 0}
 --- !u!95 &874696601
 Animator:
   serializedVersion: 3
@@ -572,7 +575,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 50
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 4
