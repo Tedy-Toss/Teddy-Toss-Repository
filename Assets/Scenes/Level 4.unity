@@ -1867,7 +1867,7 @@ Transform:
   m_GameObject: {fileID: 226969014}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 101, y: 7.84, z: 0}
-  m_LocalScale: {x: 6, y: 0.54, z: 1}
+  m_LocalScale: {x: 6, y: 12, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 54
@@ -3829,7 +3829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Follow: {fileID: 1698419301}
   smoothSpeed: 2
-  offset: {x: 0, y: 1, z: -2}
+  offset: {x: 0, y: 1, z: -1}
 --- !u!81 &436336292
 AudioListener:
   m_ObjectHideFlags: 0
@@ -9746,7 +9746,7 @@ Transform:
   m_GameObject: {fileID: 1059994464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 22.26, y: 7.84, z: 0}
-  m_LocalScale: {x: 6, y: 0.54, z: 1}
+  m_LocalScale: {x: 6, y: 12, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 53
@@ -11471,7 +11471,7 @@ Transform:
   m_GameObject: {fileID: 1282705829}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 179, y: 7.84, z: 0}
-  m_LocalScale: {x: 6, y: 0.54, z: 1}
+  m_LocalScale: {x: 6, y: 12, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 55
@@ -25578,7 +25578,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698419292}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.7, y: -1.72, z: -1}
+  m_LocalPosition: {x: -7, y: 1, z: -1}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 1725502583}
@@ -25628,7 +25628,7 @@ MonoBehaviour:
   allowedToJump: 0
   jump: 0
   onGround: 0
-  jumpForce: 5
+  jumpForce: 15
   playerBody: {fileID: 1698419299}
 --- !u!1 &1725502582
 GameObject:

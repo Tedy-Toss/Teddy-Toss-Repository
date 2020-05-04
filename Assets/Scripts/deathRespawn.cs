@@ -111,7 +111,7 @@ public class deathRespawn : MonoBehaviour
         //test_dead.SetActive(true);
         yield return new WaitForSeconds(3);
         //test_dead.SetActive(false);
-        transform.position = new Vector3(-6, -3, 0);
+        transform.position = new Vector3(-7, 1, 0);
         //gameObject.GetComponent<Renderer>().enabled = true;
         movementScript.enabled = true;
         rb.gravityScale = 4;
@@ -132,7 +132,7 @@ public class deathRespawn : MonoBehaviour
        // test_dead.SetActive(true);
         yield return new WaitForSeconds(3);
         //test_dead.SetActive(false);
-        transform.position = new Vector3(-6, -3, 0);
+        transform.position = new Vector3(-7, 1, 0);
         //gameObject.GetComponent<Renderer>().enabled = true;
         movementScript.enabled = true;
         rb.gravityScale = 4;
@@ -152,7 +152,7 @@ public class deathRespawn : MonoBehaviour
         //test_dead.SetActive(true);
         yield return new WaitForSeconds(3);
         //test_dead.SetActive(false);
-        transform.position = new Vector3(-6, -3, 0);
+        transform.position = new Vector3(-7, 1, 0);
         //gameObject.GetComponent<Renderer>().enabled = true;
         movementScript.enabled = true;
         rb.gravityScale = 4;

@@ -2627,7 +2627,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453124674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.71, y: -4.96, z: 1}
+  m_LocalPosition: {x: -7, y: 1, z: 1}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 504048570}
@@ -2691,7 +2691,7 @@ MonoBehaviour:
   allowedToJump: 0
   jump: 0
   onGround: 0
-  jumpForce: 5
+  jumpForce: 20
   playerBody: {fileID: 1453124679}
 --- !u!114 &1453124685
 MonoBehaviour:
@@ -8685,7 +8685,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -11.002133, y: -2.4980903}
+  m_Offset: {x: -11.004585, y: -2.5054476}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8696,7 +8696,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.001074, y: 1.0034647}
+  m_Size: {x: 5.99617, y: 1.0083699}
   m_EdgeRadius: 0
 --- !u!61 &2135700238
 BoxCollider2D:

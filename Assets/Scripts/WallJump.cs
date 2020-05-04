@@ -23,7 +23,7 @@ public class WallJump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && allowedToJump && jump && onGround == true)
+        if (Input.GetKeyDown(KeyCode.Space) && allowedToJump && jump == true && onGround == false)
         {
             Debug.Log("jump");
             playerBody.velocity = new Vector2(playerBody.velocity.x, jumpForce);
