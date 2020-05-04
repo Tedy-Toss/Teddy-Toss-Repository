@@ -23,6 +23,7 @@ public class TeddyToss : MonoBehaviour
     void Update()
     {
         startPos = transform.position;
+        //if()
     }
 
 
@@ -70,6 +71,7 @@ public class TeddyToss : MonoBehaviour
             isAir = false;
         }
     }
+    
 
     private void launchCheck()
     {

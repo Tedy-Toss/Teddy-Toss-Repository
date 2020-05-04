@@ -27,8 +27,8 @@ public class WallJump : MonoBehaviour
         {
             Debug.Log("jump");
             playerBody.velocity = new Vector2(playerBody.velocity.x, jumpForce);
-            allowedToJump = false;
-            jump = false;
+            //allowedToJump = false;
+            //jump = false;
         }
     }
 
@@ -36,7 +36,9 @@ public class WallJump : MonoBehaviour
     {
         if (collision.gameObject.tag == "wall" && jump == true)
         {
+            jump = true;
             allowedToJump = true;
+            Debug.Log("im on wall");
         }
 
         if (collision.gameObject.tag == "ground")
@@ -51,6 +53,7 @@ public class WallJump : MonoBehaviour
         {
             allowedToJump = false;
             jump = true;
+            Debug.Log("why am i here");
         }
 
         if (collision.gameObject.tag == "ground")
@@ -58,5 +61,5 @@ public class WallJump : MonoBehaviour
             onGround = false;
         }
     }
-
+    
 }
