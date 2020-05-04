@@ -2117,6 +2117,133 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1291053241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1291053242}
+  - component: {fileID: 1291053243}
+  m_Layer: 8
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1291053242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291053241}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1453124681}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1291053243
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291053241}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3fcacb324b1e006489fa6ae868d0a8f2, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1334103151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2520,9 +2647,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008911292, y: -0.2852854}
+  m_Offset: {x: -0.0004976591, y: -0.25662488}
   serializedVersion: 2
-  m_Radius: 0.20190103
+  m_Radius: 0.24108398
 --- !u!61 &1453124678
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2536,7 +2663,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00112921, y: 0.13963938}
+  m_Offset: {x: 0.0014336556, y: 0.13963938}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2547,7 +2674,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.50866926, y: 0.73317134}
+  m_Size: {x: 0.5112269, y: 0.73317134}
   m_EdgeRadius: 0
 --- !u!50 &1453124679
 Rigidbody2D:
@@ -2632,6 +2759,7 @@ Transform:
   m_Children:
   - {fileID: 504048570}
   - {fileID: 1933407902}
+  - {fileID: 1291053242}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2676,6 +2804,54 @@ MonoBehaviour:
   Laser2: {fileID: 1658224634}
   LaserBottom2: {fileID: 2140115826}
   LaserTop2: {fileID: 1644505895}
+  Laser3: {fileID: 1644505895}
+  LaserBottom3: {fileID: 2140115826}
+  LaserTop3: {fileID: 1658224634}
+  Laser4: {fileID: 2140115826}
+  LaserBottom4: {fileID: 1644505895}
+  LaserTop4: {fileID: 2140115826}
+  Laser5: {fileID: 1658224634}
+  LaserBottom5: {fileID: 2140115826}
+  LaserTop5: {fileID: 1658224634}
+  Laser6: {fileID: 1644505895}
+  LaserBottom6: {fileID: 1644505895}
+  LaserTop6: {fileID: 2140115826}
+  Laser7: {fileID: 2140115826}
+  LaserBottom7: {fileID: 1658224634}
+  LaserTop7: {fileID: 1644505895}
+  Laser8: {fileID: 2140115826}
+  LaserBottom8: {fileID: 1658224634}
+  LaserTop8: {fileID: 2140115826}
+  Laser9: {fileID: 1644505895}
+  LaserBottom9: {fileID: 1658224634}
+  LaserTop9: {fileID: 2140115826}
+  Laser10: {fileID: 1644505895}
+  LaserBottom10: {fileID: 1658224634}
+  LaserTop10: {fileID: 2140115826}
+  Laser11: {fileID: 1658224634}
+  LaserBottom11: {fileID: 1644505895}
+  LaserTop11: {fileID: 2140115826}
+  Laser12: {fileID: 2140115826}
+  LaserBottom12: {fileID: 1658224634}
+  LaserTop12: {fileID: 1644505895}
+  Laser13: {fileID: 2140115826}
+  LaserBottom13: {fileID: 1658224634}
+  LaserTop13: {fileID: 2140115826}
+  Laser14: {fileID: 1644505895}
+  LaserBottom14: {fileID: 1644505895}
+  LaserTop14: {fileID: 2140115826}
+  Laser15: {fileID: 1658224634}
+  LaserBottom15: {fileID: 2140115826}
+  LaserTop15: {fileID: 1644505895}
+  Laser16: {fileID: 1644505895}
+  LaserBottom16: {fileID: 1658224634}
+  LaserTop16: {fileID: 2140115826}
+  Laser17: {fileID: 1644505895}
+  LaserBottom17: {fileID: 2140115826}
+  LaserTop17: {fileID: 1658224634}
+  Laser18: {fileID: 1658224634}
+  LaserBottom18: {fileID: 1658224634}
+  LaserTop18: {fileID: 2140115826}
 --- !u!114 &1453124684
 MonoBehaviour:
   m_ObjectHideFlags: 0

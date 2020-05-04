@@ -120,6 +120,133 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &5826209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5826210}
+  - component: {fileID: 5826211}
+  m_Layer: 8
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5826210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1592312081}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &5826211
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826209}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9379366a148fd8645b5e49e0fb8d7217, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.491
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &17854826
 GameObject:
   m_ObjectHideFlags: 0
@@ -36762,6 +36889,54 @@ MonoBehaviour:
   Laser2: {fileID: 1448242079}
   LaserBottom2: {fileID: 1546957816}
   LaserTop2: {fileID: 1864767814}
+  Laser3: {fileID: 1864767814}
+  LaserBottom3: {fileID: 1448242079}
+  LaserTop3: {fileID: 1546957816}
+  Laser4: {fileID: 1448242079}
+  LaserBottom4: {fileID: 1864767814}
+  LaserTop4: {fileID: 1546957816}
+  Laser5: {fileID: 1864767814}
+  LaserBottom5: {fileID: 1448242079}
+  LaserTop5: {fileID: 1546957816}
+  Laser6: {fileID: 1864767814}
+  LaserBottom6: {fileID: 1448242079}
+  LaserTop6: {fileID: 1546957816}
+  Laser7: {fileID: 1864767814}
+  LaserBottom7: {fileID: 1448242079}
+  LaserTop7: {fileID: 1546957816}
+  Laser8: {fileID: 1546957816}
+  LaserBottom8: {fileID: 1448242079}
+  LaserTop8: {fileID: 1864767814}
+  Laser9: {fileID: 1864767814}
+  LaserBottom9: {fileID: 1448242079}
+  LaserTop9: {fileID: 1546957816}
+  Laser10: {fileID: 1546957816}
+  LaserBottom10: {fileID: 1448242079}
+  LaserTop10: {fileID: 1864767814}
+  Laser11: {fileID: 1864767814}
+  LaserBottom11: {fileID: 1448242079}
+  LaserTop11: {fileID: 1546957816}
+  Laser12: {fileID: 1864767814}
+  LaserBottom12: {fileID: 1864767814}
+  LaserTop12: {fileID: 1448242079}
+  Laser13: {fileID: 1546957816}
+  LaserBottom13: {fileID: 1864767814}
+  LaserTop13: {fileID: 1448242079}
+  Laser14: {fileID: 1546957816}
+  LaserBottom14: {fileID: 1864767814}
+  LaserTop14: {fileID: 1448242079}
+  Laser15: {fileID: 1546957816}
+  LaserBottom15: {fileID: 1864767814}
+  LaserTop15: {fileID: 1546957816}
+  Laser16: {fileID: 1448242079}
+  LaserBottom16: {fileID: 1448242079}
+  LaserTop16: {fileID: 1864767814}
+  Laser17: {fileID: 1448242079}
+  LaserBottom17: {fileID: 1546957816}
+  LaserTop17: {fileID: 1546957816}
+  Laser18: {fileID: 1448242079}
+  LaserBottom18: {fileID: 1448242079}
+  LaserTop18: {fileID: 1864767814}
 --- !u!95 &1592312074
 Animator:
   serializedVersion: 3
@@ -36863,9 +37038,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008911292, y: -0.2852854}
+  m_Offset: {x: -0.0028718314, y: -0.27247965}
   serializedVersion: 2
-  m_Radius: 0.20190103
+  m_Radius: 0.23351812
 --- !u!61 &1592312078
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36879,7 +37054,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00112921, y: 0.13963938}
+  m_Offset: {x: -0.0025781542, y: 0.13963938}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -36890,7 +37065,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.50866926, y: 0.73317134}
+  m_Size: {x: 0.50602424, y: 0.73317134}
   m_EdgeRadius: 0
 --- !u!50 &1592312079
 Rigidbody2D:
@@ -36975,6 +37150,7 @@ Transform:
   m_Children:
   - {fileID: 1670370732}
   - {fileID: 1119393895}
+  - {fileID: 5826210}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

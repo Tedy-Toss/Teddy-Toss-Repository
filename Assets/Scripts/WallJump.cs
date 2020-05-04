@@ -27,8 +27,8 @@ public class WallJump : MonoBehaviour
         {
             Debug.Log("jump");
             playerBody.velocity = new Vector2(playerBody.velocity.x, jumpForce);
-            allowedToJump = false;
-            jump = false;
+            //allowedToJump = false;
+            //jump = false;
         }
     }
 
