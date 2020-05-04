@@ -71,14 +71,7 @@ public class TeddyToss : MonoBehaviour
             isAir = false;
         }
     }
-    private IEnumerator workAround()
-    {
-        if (airMove.m_AirControl == false)
-        {
-            yield return new WaitForSeconds(3);
-            airMove.m_AirControl = true;
-        }
-    }
+    
 
     private void launchCheck()
     {
