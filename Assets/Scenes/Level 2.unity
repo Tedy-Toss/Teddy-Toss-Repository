@@ -8093,6 +8093,9 @@ GameObject:
   - component: {fileID: 895880996}
   - component: {fileID: 895880995}
   - component: {fileID: 895880999}
+  - component: {fileID: 895880989}
+  - component: {fileID: 895880977}
+  - component: {fileID: 895880975}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: ground
@@ -30402,6 +30405,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 12.998611, y: 7.976898}
   m_EdgeRadius: 0
+--- !u!61 &895880975
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895880968}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 102.48848, y: -3.0589933}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0124207, y: 0.11295128}
+  m_EdgeRadius: 0
 --- !u!61 &895880976
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30427,6 +30456,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 47.33481, y: 1.7368011}
+  m_EdgeRadius: 0
+--- !u!61 &895880977
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895880968}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 56.496178, y: -3.080093}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.99920654, y: 0.15146947}
   m_EdgeRadius: 0
 --- !u!61 &895880978
 BoxCollider2D:
@@ -30713,6 +30768,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.99850464, y: 1.0018544}
+  m_EdgeRadius: 0
+--- !u!61 &895880989
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895880968}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 71, y: 1.5}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 170, y: 35}
   m_EdgeRadius: 0
 --- !u!61 &895880991
 BoxCollider2D:
@@ -38670,7 +38751,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 102.5041, y: -5.5001354}
+  m_Offset: {x: 102.5041, y: -5.586855}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -38681,7 +38762,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.004776, y: 5.002075}
+  m_Size: {x: 1.004776, y: 4.8286357}
   m_EdgeRadius: 0
 --- !u!61 &1785251946
 BoxCollider2D:
@@ -38696,7 +38777,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 56.50551, y: -5.49935}
+  m_Offset: {x: 56.50551, y: -5.565592}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -38707,7 +38788,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9887085, y: 4.9995317}
+  m_Size: {x: 0.9887085, y: 4.867048}
   m_EdgeRadius: 0
 --- !u!61 &1785251947
 BoxCollider2D:
@@ -39588,7 +39669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d3eb1decbf3f514fb3a2455922e3989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 4
+  index: 3
   levelName: 
 --- !u!61 &1853491230
 BoxCollider2D:
