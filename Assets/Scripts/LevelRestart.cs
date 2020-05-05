@@ -5,12 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class LevelRestart : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    void doExitGame()
     {
-        if (collision.CompareTag("Player"))
-        {
-            //restart level
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
+        Application.Quit();
+        Debug.Log("im quiting");
     }
 }
