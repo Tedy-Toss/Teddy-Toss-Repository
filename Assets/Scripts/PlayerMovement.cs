@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -8,11 +9,17 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
 
     public float speed = 40f;
+    
 
     float horizontalMove = 0f;
     bool jump = false;
     bool Crouch = false;
-    
+
+    void Start()
+    {
+        
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -38,6 +45,36 @@ public class PlayerMovement : MonoBehaviour
            
         }
     }
+
+    public void OnClickright()
+    {
+        horizontalMove = 1 * speed;
+        Debug.Log(horizontalMove);
+    }
+    public void OnClickleft()
+    {
+        horizontalMove = -1 * speed;
+        Debug.Log(horizontalMove);
+    }
+    public void OnClickstop()
+    {
+        horizontalMove = 0 * speed;
+        Debug.Log(horizontalMove);
+    }
+    public void OnClickJump()
+    {
+        jump = true;
+        animator.SetBool("IsJumping", true);
+    }
+    public void OnClickCrouch()
+    {
+        Crouch = true;
+    }
+    public void OnClickunCrouch()
+    {
+        Crouch = false;
+    }
+
 
     public void OnDucking(bool isDucking)
     {
