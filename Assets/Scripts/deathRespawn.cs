@@ -301,7 +301,7 @@ public class deathRespawn : MonoBehaviour
         //gameObject.GetComponent<Renderer>().enabled = false;
         //test_dead.transform.position = new Vector3(playerPosX, playerPosY - 0.8f, playerPosZ);
         //test_dead.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         //test_dead.SetActive(false);
         transform.position = new Vector3(-7, 1, 0);
         //gameObject.GetComponent<Renderer>().enabled = true;
@@ -322,7 +322,7 @@ public class deathRespawn : MonoBehaviour
         //gameObject.GetComponent<Renderer>().enabled = false;
         //test_dead.transform.position = new Vector3(playerPosX, playerPosY - 0.5f, playerPosZ);
        // test_dead.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         //test_dead.SetActive(false);
         transform.position = new Vector3(-7, 1, 0);
         //gameObject.GetComponent<Renderer>().enabled = true;
@@ -342,7 +342,7 @@ public class deathRespawn : MonoBehaviour
         //gameObject.GetComponent<Renderer>().enabled = false;
         //test_dead.transform.position = new Vector3(playerPosX, playerPosY, playerPosZ);
         //test_dead.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         //test_dead.SetActive(false);
         transform.position = new Vector3(-7, 1, 0);
         //gameObject.GetComponent<Renderer>().enabled = true;
