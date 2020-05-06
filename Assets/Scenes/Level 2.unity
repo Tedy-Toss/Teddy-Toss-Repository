@@ -5781,9 +5781,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf879d4496b97c44395ccd039438aee0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Follow: {fileID: 1518152114}
-  smoothSpeed: 2
-  offset: {x: 0, y: 1, z: -2}
+  smoothTimeY: 0.05
+  smoothtimeX: 0.05
+  player: {fileID: 1518152102}
+  bounds: 0
+  minCameraPos: {x: 0, y: 0, z: 0}
+  maxCameraPos: {x: 0, y: 0, z: 0}
 --- !u!1 &634276519
 GameObject:
   m_ObjectHideFlags: 0

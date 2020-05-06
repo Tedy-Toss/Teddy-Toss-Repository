@@ -2,25 +2,39 @@
 using System.Collections;
 
 public class CompleteCameraController : MonoBehaviour {
-     
-    public Transform Follow; //Public variable to store a reference to the player game object
 
-    public float smoothSpeed = 2f;
+    private Vector2 velocity;
 
-	public Vector3 offset;          //Private variable to store the offset distance between the player and camera
+    public float smoothTimeY;
+    public float smoothtimeX;
 
-    // LateUpdate is called after Update each frame
-    
-    void LateUpdate () 
-	{
-        Vector3 desiredLocation = Follow.position + offset;
+    public GameObject player;
 
-        Vector3 smoothedLocation = Vector3.Lerp(transform.position, desiredLocation, smoothSpeed * Time.deltaTime);
+    public bool bounds;
 
-        // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
-        transform.position = smoothedLocation;
+    public Vector3 minCameraPos;
+    public Vector3 maxCameraPos;
 
-        
-      
+    void Start()
+    {
+        player = GameObject.FindWithTag("Player");
+    }
+
+    private void LateUpdate()
+    {
+        float posX = Mathf.SmoothDamp(transform.position.x, player.transform.position.x, ref velocity.x, smoothtimeX);
+        float posY = Mathf.SmoothDamp(transform.position.y, player.transform.position.y, ref velocity.y, smoothTimeY);
+
+        transform.position = new Vector3(posX, posY, transform.position.z);
+
+        if(bounds)
+        {
+            transform.position = new Vector3(Mathf.Clamp(transform.position.x, minCameraPos.x, maxCameraPos.x),
+                Mathf.Clamp(transform.position.y, minCameraPos.y, maxCameraPos.y),
+                Mathf.Clamp(transform.position.z, minCameraPos.z, maxCameraPos.z));
+
+
+        }
+
     }
 }

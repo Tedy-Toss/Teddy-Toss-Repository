@@ -4148,9 +4148,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf879d4496b97c44395ccd039438aee0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Follow: {fileID: 1698419301}
-  smoothSpeed: 2
-  offset: {x: 0, y: 0, z: -1}
+  smoothTimeY: 0.05
+  smoothtimeX: 0.05
+  player: {fileID: 1698419292}
+  bounds: 0
+  minCameraPos: {x: 0, y: 0, z: 0}
+  maxCameraPos: {x: 0, y: 0, z: 0}
 --- !u!81 &436336292
 AudioListener:
   m_ObjectHideFlags: 0
