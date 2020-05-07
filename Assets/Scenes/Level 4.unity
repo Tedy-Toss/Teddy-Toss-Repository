@@ -1920,7 +1920,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226969014}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 101, y: 7.84, z: 0}
+  m_LocalPosition: {x: 101, y: 8, z: 0}
   m_LocalScale: {x: 7, y: 13, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10868,7 +10868,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059994464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.2, y: 8.1, z: 0}
+  m_LocalPosition: {x: 9.2, y: 8, z: 0}
   m_LocalScale: {x: 7, y: 13, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12753,7 +12753,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282705829}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 193, y: 7.84, z: 0}
+  m_LocalPosition: {x: 192.88, y: 8, z: 0}
   m_LocalScale: {x: 7, y: 13, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -27122,8 +27122,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698419292}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.51, y: -1.57, z: -1}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalPosition: {x: -6.93, y: -1.36, z: -1}
+  m_LocalScale: {x: 1.5, y: 1.5225, z: 1}
   m_Children:
   - {fileID: 1725502583}
   - {fileID: 810606943}
@@ -27156,6 +27156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb569053c4c60684499e765e8695982a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   force: 650
   rb: {fileID: 1698419299}
 --- !u!114 &1698419304
@@ -28151,7 +28152,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: StopCrouch
+  m_Text: Stop Crouch
 --- !u!222 &1814655303
 CanvasRenderer:
   m_ObjectHideFlags: 0

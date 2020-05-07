@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: 9159b4d5064e99f4b87382a6e8ae9eaa
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5103412187469197020
+    second: HeldSpriteSheets_0
+  - first:
+      213: 5273979174816291053
+    second: HeldSpriteSheets_1
+  - first:
+      213: 4875754739565378600
+    second: HeldSpriteSheets_2
+  - first:
+      213: 4116488682925920264
+    second: HeldSpriteSheets_3
+  - first:
+      213: 1833010907016459356
+    second: HeldSpriteSheets_4
+  - first:
+      213: -8688209530136010336
+    second: HeldSpriteSheets_5
+  - first:
+      213: -1137146133581965161
+    second: HeldSpriteSheets_6
+  - first:
+      213: -3295860326084297031
+    second: HeldSpriteSheets_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +64,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,7 +87,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -72,7 +120,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: HeldSpriteSheets_0
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 257
+        width: 89
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e7145f9fda2aa4ea79958f5e28f635
+      internalID: -5103412187469197020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeldSpriteSheets_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 257
+        width: 89
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f7111947471684181d4ab1c93039dc
+      internalID: 5273979174816291053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeldSpriteSheets_2
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 258
+        width: 89
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f7160b7687e8f4a899a8b58581e005
+      internalID: 4875754739565378600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeldSpriteSheets_3
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 257
+        width: 89
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba8468db379f1e4bb4bd7dda35482f5
+      internalID: 4116488682925920264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeldSpriteSheets_4
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 257
+        width: 89
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabbe93273a94724884ad71fa48b5fd5
+      internalID: 1833010907016459356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeldSpriteSheets_5
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2
+        width: 89
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0adf980e861f08849b9b5e66fe3052f5
+      internalID: -8688209530136010336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeldSpriteSheets_6
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 2
+        width: 89
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee45ae4a97f8cd43b6368bf501214b9
+      internalID: -1137146133581965161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeldSpriteSheets_7
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 2
+        width: 89
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801c9fb8868813f49944ac2051be378a
+      internalID: -3295860326084297031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

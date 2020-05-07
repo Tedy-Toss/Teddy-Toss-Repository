@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TeddyToss : MonoBehaviour
 {
+    public Animator animator;
     Vector2 startPos;
     Vector2 launchVector;
     public float force = 100;
@@ -38,7 +39,8 @@ public class TeddyToss : MonoBehaviour
             Vector2 dir = startPos - launchVector;
             GetComponent<Rigidbody2D>().AddForce(dir * force);
             isAir = true;
-
+            animator.SetBool("TeddyToss", true);
+            animator.SetBool("TeddyToss", false);
             Invoke("launchCheck", 0.1f);
         }
     }
@@ -48,6 +50,7 @@ public class TeddyToss : MonoBehaviour
         if (isAir == false && rb.velocity.y == 0)
         {
             // Convert mouse position to world position
+            //animator.SetBool("TeddyToss", true);
             Vector2 p = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             // Keep it in a certain radius

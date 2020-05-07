@@ -2381,7 +2381,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: StopCrouch
+  m_Text: Stop Crouch
 --- !u!222 &983975088
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3762,6 +3762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb569053c4c60684499e765e8695982a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   force: 950
   rb: {fileID: 1453124679}
 --- !u!114 &1453124686
