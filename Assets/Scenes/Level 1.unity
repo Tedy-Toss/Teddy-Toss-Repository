@@ -648,8 +648,8 @@ MonoBehaviour:
   smoothtimeX: 0.05
   player: {fileID: 1453124674}
   bounds: 1
-  minCameraPos: {x: 3, y: -5, z: -5}
-  maxCameraPos: {x: 93, y: -3, z: -5}
+  minCameraPos: {x: 5, y: -5, z: -5}
+  maxCameraPos: {x: 69, y: -3, z: -5}
 --- !u!1 &328140272
 GameObject:
   m_ObjectHideFlags: 0
@@ -3199,7 +3199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1334103151}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34.08, y: -2.13, z: 0}
+  m_LocalPosition: {x: -34.08, y: -3.74, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3635,7 +3635,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453124674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.9, y: -2.72, z: 1}
+  m_LocalPosition: {x: -7.62, y: -5.35, z: 1}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 504048570}
@@ -4111,7 +4111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1526490749}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 57.995, y: -2.25, z: 0}
+  m_LocalPosition: {x: 57.995, y: -3.82, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5029,7 +5029,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739177316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 150.1, y: -2.25, z: 0}
+  m_LocalPosition: {x: 150.1, y: -3.82, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6354,6 +6354,7 @@ GameObject:
   - component: {fileID: 2135700247}
   - component: {fileID: 2135700246}
   - component: {fileID: 2135700240}
+  - component: {fileID: 2135700241}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: ground
@@ -10385,6 +10386,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 16.998322, y: 2.0068598}
+  m_EdgeRadius: 0
+--- !u!61 &2135700241
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135700230}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 88.995125, y: -5.554827}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.0097504, y: 4.962821}
   m_EdgeRadius: 0
 --- !u!61 &2135700246
 BoxCollider2D:
